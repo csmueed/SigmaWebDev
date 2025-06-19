@@ -1,0 +1,1 @@
+Hello, This is my learning code, and i am uploading this code to save my learning journey, understanding git and github and for future coding, currently i am learning full stack web dev, and this code is for that course journey. Thanks!
