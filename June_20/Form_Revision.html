@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Revision</title>
+</head>
+<body>
+    <form action="action.php">
+        <div>
+            <label for="username">username:</label>
+        <input type="text" name="text" id="text" placeholder="Enter text here" required>
+        </div>
+        <div>
+        <label for="password">password:</label>
+        <input type="password" name="password" id="password" placeholder="Enter password here" required>
+        </div>
+        <div>
+        <label for="submit">click here to submit:</label>
+        <input type="submit" name="submit" id="submit" value="Submit" required> 
+        </div>
+        <div>
+            <label for="gender">Gender:</label>
+            <input type="radio" name="male" placeholder="male" id="male"">
+            <label for="male">male</label>
+            <input type="radio" name="female" id="female" 
+            <label for="female">female</label>
+        </div>
+        <div>
+            <input type="checkbox" name="checbox" id="checkbox" placeholder="checkbox">
+            <label for="checkbox">click to subscribe news</label required>
+        </div>
+        <div>
+            <input type="reset" name="reset" id="reset">
+        </div>
+        <div>
+            <input type="email" name="email" id="email" placeholder="Enter email here" required>
+        </div>
+        <div>
+            <label for="text">Enter here:</label> <br>
+            <textarea name="area" cols="16" rows="20" id="area" required autofocus></textarea>
+        </div>
+        <div>
+            <select name="country" id="country">country
+            <option value="germany">germany</option>
+            <option value="france">france</option>
+            <option value="sweden">sweden</option>
+            </select>
+        </div>
+    </form>
+</body>
+</html>
