@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form - Mueed Corp</title>
+</head>
+
+<body>
+    <main>
+        <h1>Mueed Corp - Job Application Form</h1>
+        <hr>
+
+        <form action="action.php">
+
+            <section>
+                <h2>Personal Information</h2>
+                <label for="name">Enter your Name: </label>
+                <input type="text" name="name" id="name" placeholder="Full Name" required> <br /> <br />
+                <label for="email">Enter your Email Address: </label>
+                <input type="email" name="email" id="email" placeholder="Email Address" required> <br /> <br />
+                <label for="PhoneNo">Enter your Phone Number: </label>
+                <input type="tel" name="PhoneNo" id="PhoneNo" placeholder="Phone Number" required> <br /> <br />
+                <label for="DOB">Enter your Date of Birth: </label>
+                <input type="date" name="DOB" id="DOB" required> <br /> <br />
+
+                <label for="gender">Select Your Gender: </label> <br /> <br />
+
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label> <br /> <br />
+
+                <label for="photo">Please Upload Your Passport Size Photo Here:</label>
+                <input type="file" name="photo" id="photo" accept=".png,.jpeg,.jpg" required> <br /><br />
+                <hr>
+
+            </section>
+
+            <section>
+                <h2>Job Details</h2>
+                <label for="Job-Position">Select Job Position:</label>
+                <select name="Job-Position" id="Job-Position">
+                    <option value="">Please Choose the Option</option>
+                    <option value="Frontend Developer">Frontend Developer</option>
+                    <option value="Backend Developer">Backend Developer</option>
+                    <option value="Full Stack Developer">Full Stack Developer</option>
+                    <option value="Android App Developer">Android App Developer</option>
+                    <option value="iOS App Developer">iOS App Developer</option>
+                </select> <br /> <br />
+
+                <label for="Pref-Job-Location">Preferred Job Location:</label>
+                <select name="Pref-Job-Location" id="Pref-Job-Location">
+                    <option value="">Please Select your Preferred Job Location</option>
+                    <option value="Lahore">Lahore</option>
+                    <option value="Karachi">Karachi</option>
+                    <option value="Islamabad">Islamabad</option>
+                </select> <br /> <br />
+                <label for="Expected-Salary">Please Enter Expected Salary:</label>
+                <input type="number" name="Expected-Salary" id="Expected-Salary" placeholder="in PKR" required> <br />
+                <br />
+
+                <label for="Avail-Join">Availability to Join:</label>
+                <input type="date" name="Avail-Join" id="Avail-Join" required> <br /> <br />
+
+                <label for="relocate">Are you Willing to Relocate:</label>
+                <input type="checkbox" name="relocate" id="relocate" value="Yes"> 
+                <label for="yes-rel">Yes</label>
+                <br /><br />
+
+                <label for="resume">Please Upload Your Resume:</label>
+                <input type="file" name="resume" id="resume" accept=".pdf,.doc,.docx" required> <br /> <br />
+
+                <label for="cover-letter">Please Write Your Cover Letter Here:</label> <br/>
+                <textarea name="cover-letter" id="cover-letter" cols="50" rows="10" required ></textarea>
+                <br /> <br />
+                <hr>
+            </section>
+            <section>
+                <h2>Education</h2>
+                <label for="degree">Degree:</label>
+                <select name="degree" id="degree">
+                    <option value="">Select your Degree</option>
+                    <option value="BSCS">Bachelors in Computer Sciences</option>
+                    <option value="BSSE">Bachelors in Software Engineering</option>
+                    <option value="BSIT">Bachelors in Information Technology</option>
+                </select>
+                <br /> <br />
+                <label for="uni-name">University Name:</label>
+                <input type="text" name="uni-name" id="uni-name" placeholder="University Name" required> <br /> <br />
+                <label for="grad-year">Graduation Year:</label>
+                <input type="number" name="grad-year" id="grad-year" placeholder="Year of Graduation" required> <br />
+                <br />
+                <label for="cgpa">CGPA:</label>
+                <input type="number" name="cgpa" id="cgpa" step="0.1" placeholder="CGPA out of 4" required> <br />
+                <br />
+                <hr>
+
+                <section>
+                    <h2>Experience</h2>
+                    <label for="exp-years">Experience:</label>
+                    <select name="exp-years" id="exp-years">
+                        <option value="">Select how many years of experience you have</option>
+                        <option value="Oneminus">&lt; 1 Year</option>
+                        <option value="One">1 Year</option>
+                        <option value="Two">2 Years</option>
+                        <option value="Three">3 Years</option>
+                        <option value="Four">4 Years</option>
+                        <option value="Five">5 Years or more</option>
+                    </select>
+                    <br /> <br />
+                    <label for="prev-fields">In which fields you worked previously:</label> <br />
+                    <input type="checkbox" name="prev-fields[]" id="Frontend" value="Frontend Development">
+                    <label for="Frontend">Frontend Development</label> 
+                     <br />
+                    <input type="checkbox" name="prev-fields[]" id="Backend" value="Backend Development">
+                    <label for="Backend">Backend Development</label> 
+                     <br />
+                    <input type="checkbox" name="prev-fields[]" id="Full-Stack" value="Full-Stack Development">
+                    <label for="Full-Stack">Full Stack Web Development</label> 
+                     <br />
+                    <input type="checkbox" name="prev-fields[]" id="Android" value="Android Development">
+                    <label for="Android">Android App Development</label> 
+                     <br />
+                    <input type="checkbox" name="prev-fields[]" id="iOS" value="iOS Development">
+                    <label for="iOS">iOS App Development</label>
+                     <br />
+                    
+                    <br /> <br />
+                    <hr>
+                </section>
+
+                <section>
+
+                    <h2>
+                        References
+                    </h2>
+                    <label for="ref-no">Reference:</label>
+                    <input type="text" name="ref-no" id="ref-no" placeholder="Reference Name" required> <br /> <br />
+                    <label for="ref-contact">Reference Contact:</label>
+                    <input type="tel" name="ref-contact" id="ref-contact" placeholder="Reference Contact Number"
+                        required> <br /> <br />
+                    <label for="ref-email">Reference Email:</label>
+                    <input type="email" name="ref-email" id="ref-email" placeholder="Reference Email Address" required>
+                    <br /> <br />
+                    <label for="ref-relationship">Reference Relationship:</label>
+                    <input type="text" name="ref-relationship" id="ref-relationship"
+                        placeholder="Your Relationship with Reference" required> <br />
+                    <br /> <br />
+                    <hr>
+
+                </section>
+
+                <section>
+                    <h2> Declaration & Consent</h2>
+                    <input type="checkbox" name="declare" id="declare" value="Yes" required>
+                    <label for="declare">I declare the information provided is true.</label>
+                    <br /> <br />
+                    <input type="checkbox" name="consent" id="consent" value="Yes" required>
+                    <label for="consent">I consent to background verification.</label>
+                    <br /> <br />
+                    <input type="checkbox" name="terms" id="terms" value="Yes" required>
+                    <label for="terms">I agree to the terms and conditions.</label>
+                    <br /> <br />
+                    <hr>
+                </section>
+
+                <section>
+                    <h2>Submit Application</h2>
+                    <input type="reset" value="Reset Form"> <br /> <br />
+                    <input type="submit" value="Submit Application">
+                    <br /> <br />
+                    <hr>
+                </section>
+    </form>
+
+    </main>
+    <footer>
+        <p>&copy; 2025 Mueed Corp. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
