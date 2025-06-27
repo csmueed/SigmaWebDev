@@ -1,0 +1,18 @@
+#heading-main {
+    color: red;
+    background-color: yellow;
+}
+#name {
+    color: green;
+    background-color: rgb(251, 251, 116);
+    text-align: center;
+}
+#contact {
+    color: rgb(5, 18, 72);
+    background-color: rgb(0, 255, 200);
+    font: 100;
+    font-size: medium;
+    font-weight: 100;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
