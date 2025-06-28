@@ -1,0 +1,42 @@
+p {
+    color: red;
+    background-color: rgb(201, 201, 186);
+}
+.class1 {
+    color: yellow;
+    background-color: black;
+}
+#idselector {
+    color: white;
+    background-color: blue;
+    padding: 10px;
+    border-radius: 5px;
+}
+.class2 > p {
+    color: green;
+    background-color: lightgray;
+    padding: 5px;
+    border: 2px solid darkgray;
+}
+#des {
+    color: black;
+    background-color: yellow;
+}
+#links a:hover {
+    color: white;
+    background-color: red;
+    text-decoration: underline;
+}
+#links a:visited {
+    color: purple;
+    text-decoration: none;
+}
+li:first-child {
+    color: red;
+    background-color: green;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
